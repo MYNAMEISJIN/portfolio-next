@@ -44,7 +44,7 @@ const MainContentRight = () => {
           delay:2.8
         }}
         >
-          I'm Jin from South Korea. A passionate Front-End <br /> React Developer &nbsp;
+          I&rsquo;m Jin from South Korea. A passionate Front-End <br /> React Developer &nbsp;
           <span className="bg-stone-200 font-medium text-black text-xs p-1 rounded">Hire Me!</span>
         </motion.div>
       </div>
