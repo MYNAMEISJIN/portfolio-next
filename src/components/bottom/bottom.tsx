@@ -9,7 +9,7 @@ const Bottom = () => {
           CV
         </Link>
         <h1 className=" font-extrabold text-6xl text-center">
-          LET'S WORK TOGETHER!
+          LET&rsquo;S WORK TOGETHER!
         </h1>
       </div>
       <div className="w-full pl-5 pr-5 flex justify-between">
