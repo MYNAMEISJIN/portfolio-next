@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState } from "react"
 
 
@@ -21,9 +20,6 @@ const StoreContextProvider: React.FC<{ children: React.ReactNode }> = (props) =>
     
         setSkillsLooking(!skillsLooking)
     }
-
-
-
     const contextValue: StoreContextObj = {
         skillsState: skillsLooking,
         skillsClicked: skillsClickedHandler,

@@ -5,9 +5,9 @@ import Bottom from "@/components/bottom/bottom";
 import Main from "@/components/main/main";
 import Projects from "@/components/projects/projects";
 import Skills from "@/components/skills/skills";
-import { useRef, useContext } from "react";
+import { useRef, useContext, useEffect } from "react";
 import { StoreContext } from "@/store/store-context";
-import { useScroll, useTransform, motion } from "framer-motion"
+import { useScroll, useTransform, motion, AnimatePresence } from "framer-motion"
 
 
 
@@ -21,15 +21,17 @@ export default function Home() {
   const mainY = useTransform(scrollYProgress, [0, 0.2, 0.3, 0.35], [0, 200, 300, 350])
   const bottomY = useTransform(scrollYProgress, [0.7, 0.8, 0.9, 1], [-250, -200, -100, 0])
 
-  if (homeStoreCtx.skillsState) {
-    skillsRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
+  useEffect(() => {
+    if (homeStoreCtx.skillsState) {
+      skillsRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
 
-    });
-    homeStoreCtx.skillsClicked()
-  }
+      });
+      homeStoreCtx.skillsClicked()
+    }
 
+  }, [homeStoreCtx])
 
 
 
@@ -41,7 +43,10 @@ export default function Home() {
         <motion.div className="w-full"
           style={{ y: mainY }}
         >
-          <Main />
+          <AnimatePresence>
+            <Main />
+          </AnimatePresence>
+
         </motion.div>
       </div>
       <div className="bg-white text-black w-full z-30 rounded-lg">
@@ -77,3 +82,4 @@ export default function Home() {
 //npm install framer-motion
 //npx shadcn-ui@latest init
 //npm install react-icons --save
+//npm install react-type-animation

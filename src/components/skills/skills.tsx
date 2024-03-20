@@ -1,3 +1,4 @@
+"use client"
 import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -31,6 +32,7 @@ const Skills = () => {
     { icon: FaGitAlt, size: 100 },
     { icon: BiLogoVisualStudio, size: 100 }
   ];
+
 
   return (
     <div className="flex items-center justify-center gap-11 pt-8 pb-8 overflow-hidden">

@@ -1,22 +1,52 @@
-import Image from "next/image"
-
+"use client"
+import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 
 const MainContentRight = () => {
   return (
     <div className="flex flex-col gap-8 pl-1 max-lg:pr-6 max-lg:pl-6">
-      <div className="w-96 h-60 max-lg:w-full">
+      <motion.div className="w-96 h-60 max-lg:w-full"
+      initial={{
+        opacity:0,
+      }}
+      transition={{
+        delay:4.3
+      }}
+      animate={{
+        opacity:1
+      }}
+      >
         <div className="w-full h-full">
           <img alt="me" src="/me.jpg" className="bg-white object-scale-down w-full h-full rounded" />
         </div>
-      </div>
+      </motion.div>
       <div className="flex flex-col gap-1">
-        <div className=" font-semibold text-3xl ">
-          Hi Front-End Developer from South Korea
+        <div className=" font-semibold text-3xl">
+          <TypeAnimation
+            sequence={[
+              "Hi I'm a Front-End Developer from South Korea .",
+            ]}
+            wrapper="div"
+            speed={50}
+            repeat={0}
+          />
         </div>
-        <div className="text-stone-400">
-          I'm Jin from South Korea. A passionate Front-End <br/> React Developer &nbsp;
+        <motion.div className="text-stone-400 bg-transparent"
+        initial={{
+          opacity:0,
+          y:200
+        }}
+        animate={{
+          opacity:1,
+          y:0
+        }}
+        transition={{
+          delay:2.8
+        }}
+        >
+          I'm Jin from South Korea. A passionate Front-End <br /> React Developer &nbsp;
           <span className="bg-stone-200 font-medium text-black text-xs p-1 rounded">Hire Me!</span>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

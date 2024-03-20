@@ -18,10 +18,9 @@ const AboutLeft = () => {
                 <Link href="https://github.com/MYNAMEISJIN" target="_blank" className='bg-inherit text-inherit'>
                     <FaGithub className="bg-white fill-black" size={25} />
                 </Link>
-                <Link href="mailto:hbay11@naver.com" target="_blank" className='bg-inherit text-inherit'>
+                <Link href="mailto:s.jinnn.park@gmail.com" target="_blank" className='bg-inherit text-inherit'>
                     <HiOutlineMail className="bg-white fill-sky-400 stroke-black" size={26} />
                 </Link>
-
             </div>
         </div>
     )

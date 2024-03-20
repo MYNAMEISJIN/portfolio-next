@@ -6,7 +6,6 @@ import {
     SheetClose,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import Link from "next/link"
 import { useContext } from "react"
 import { StoreContext } from "@/store/store-context"
 
@@ -28,16 +27,16 @@ const MobileMenu = () => {
                 <SheetHeader className="flex justify-center items-center h-full">
 
                     <SheetDescription className="flex flex-col gap-5 items-center">
-                        <Link href={"#home"} className="text-white text-xl font-bold">
+                        <a href={"#home"} className="text-white text-xl font-bold">
                             <SheetClose>
                                 HOME
                             </SheetClose>
-                        </Link>
-                        <Link href={"#about"} className="text-white text-xl font-bold">
+                        </a>
+                        <a href={"#about"} className="text-white text-xl font-bold">
                             <SheetClose>
                                 ABOUT
                             </SheetClose>
-                        </Link>
+                        </a>
                         <a onClick={goToSkills}  className="text-white text-xl font-bold">
                             <SheetClose>
                                 SKILLS
@@ -45,16 +44,16 @@ const MobileMenu = () => {
                         </a>
 
 
-                        <Link href={"#projects"} className="text-white text-xl font-bold">
+                        <a href={"#projects"} className="text-white text-xl font-bold">
                             <SheetClose>
                                 PROJECTS
                             </SheetClose>
-                        </Link>
-                        <Link href={"#cv"} className="text-white text-xl font-bold">
+                        </a>
+                        <a href={"#cv"} className="text-white text-xl font-bold">
                             <SheetClose>
                                 CV
                             </SheetClose>
-                        </Link>
+                        </a>
 
                     </SheetDescription>
                 </SheetHeader>
