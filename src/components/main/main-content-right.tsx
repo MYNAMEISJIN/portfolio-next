@@ -10,7 +10,7 @@ const MainContentRight = () => {
         opacity:0,
       }}
       transition={{
-        delay:4.3
+        delay:5
       }}
       animate={{
         opacity:1
@@ -41,7 +41,7 @@ const MainContentRight = () => {
           y:0
         }}
         transition={{
-          delay:2.8
+          delay:3.2
         }}
         >
           I&rsquo;m Jin from South Korea. A passionate Front-End <br /> React Developer &nbsp;

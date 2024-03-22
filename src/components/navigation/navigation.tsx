@@ -18,7 +18,7 @@ const Navigation = () => {
         y:-100,
       }}
       transition={{
-        delay:3.9
+        delay:4.9
       }}
       animate={{
         opacity:1,
