@@ -49,8 +49,8 @@ export const CarouselForProject: React.FC<{ data: ProjectData[] | null }> = (pro
                     align: "start",
                 }}
                 setApi={setApi}
-                className="w-full lg:max-w-3xl md:max-w-xl sm:max-w-sm">
-                <CarouselContent className="-ml-20">
+                className="w-full lg:max-w-3xl md:max-w-xl sm:max-w-sm bg-transparent">
+                <CarouselContent className="-ml-20 bg-transparent">
 
                     {props.data.map((item, index) => (
                         <CarouselItem key={index}

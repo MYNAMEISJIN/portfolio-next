@@ -1,10 +1,16 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 const AboutRight = () => {
     return (
         <div className='bg-inherit text-inherit max-w-lg'>
             <div className='bg-inherit text-inherit'>
-                <div className='bg-inherit text-inherit flex flex-col gap-2'>
+                <motion.div className='bg-inherit text-inherit flex flex-col gap-2 overflow-hidden'
+                initial={{ opacity: 0, x:300 }}
+                transition={{delay:0.4}}
+                whileInView={{ opacity: 1, x:0 }}
+                viewport={{ once: true }}
+                >
                     <div className='bg-inherit text-inherit text-xl font-bold'>
                        Motivated Front-End Developer
                     </div>
@@ -17,7 +23,7 @@ const AboutRight = () => {
                         In my free time, I actively pursue a healthy lifestyle through engaging in sports.
                       </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
