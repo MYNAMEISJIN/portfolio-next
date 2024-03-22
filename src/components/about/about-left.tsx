@@ -17,7 +17,7 @@ const AboutLeft = () => {
                      whileInView={{ opacity: 1, y:0 }}
                      viewport={{ once: true }}
                      >
-                        <img className="w-full bg-red-500  h-full object-cover" src="/working.jpg" alt="work" />
+                        <img className="w-full h-full object-cover" src="/working.jpg" alt="work" />
                     </motion.div>
                     <motion.div className="absolute bottom-0 right-0  z-10 w-32 h-40 border-4 border-black overflow-hidden"
                     initial={{ opacity: 0, y:100 }}
@@ -25,7 +25,7 @@ const AboutLeft = () => {
                     whileInView={{ opacity: 1, y:0 }}
                     viewport={{ once: true }}
                     >
-                        <img className="w-full h-full bg-blue-500 object-cover" src="/wrestling.jpg" alt="work out" />
+                        <img className="w-full h-full object-cover" src="/wrestling.jpg" alt="work out" />
                     </motion.div>
                 </div>
             </div>
