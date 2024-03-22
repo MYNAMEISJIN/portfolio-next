@@ -10,7 +10,7 @@ const MainContentRight = () => {
         opacity:0,
       }}
       transition={{
-        delay:5
+        delay:4.5
       }}
       animate={{
         opacity:1

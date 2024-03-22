@@ -9,7 +9,7 @@ const MainBottom = () => {
             y:100,
           }}
           transition={{
-            delay:4.9
+            delay:4
           }}
           animate={{
             opacity:1,

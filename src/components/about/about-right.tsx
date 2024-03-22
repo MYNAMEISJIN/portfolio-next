@@ -4,8 +4,8 @@ import {motion} from 'framer-motion'
 const AboutRight = () => {
     return (
         <div className='bg-inherit text-inherit max-w-lg'>
-            <div className='bg-inherit text-inherit'>
-                <motion.div className='bg-inherit text-inherit flex flex-col gap-2 overflow-hidden'
+            <div className='bg-inherit text-inherit overflow-x-hidden'>
+                <motion.div className='bg-inherit text-inherit flex flex-col gap-2'
                 initial={{ opacity: 0, x:300 }}
                 transition={{delay:0.4}}
                 whileInView={{ opacity: 1, x:0 }}
