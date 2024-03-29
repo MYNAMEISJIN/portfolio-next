@@ -27,9 +27,9 @@ const AboutRight = () => {
                         </div>
 
                         <div className='bg-inherit text-inherit text-gray-600'>
-                            Outside of work, I enjoy sports like wrestling, weight training which help me keep a healthy life and focused. I've lived in Australia on a working holiday visa and studied English in Manchester and the Philippines.
-                        </div>
-
+                            Outside of work, I enjoy sports like wrestling, weight training which help me keep a healthy life and focused. I&apos;ve lived in Australia on a working holiday visa and studied English in Manchester and the Philippines.
+                        </div> 
+                  
                         <div className='bg-inherit text-inherit text-gray-600 mt-2'>
                             In all aspects of life, I embrace challenges with enthusiasm, attention to detail, and a collaborative mindset.
                         </div>
