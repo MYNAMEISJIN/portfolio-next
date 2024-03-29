@@ -24,7 +24,7 @@ const MainContentRight = () => {
         <div className=" font-semibold text-3xl">
           <TypeAnimation
             sequence={[
-              "Hi I'm a Front-End Developer from South Korea .",
+              "Hi, I'm a Front-End Developer from South Korea.",
             ]}
             wrapper="div"
             speed={50}
