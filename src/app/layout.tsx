@@ -25,6 +25,8 @@ export default function RootLayout({
       <StoreContextProvider>
         <body className={fira_sans.className}>
           <Navigation />
+          <div id="notification"></div>
+          <div id="hello"></div>
           {children}</body>
       </StoreContextProvider>
 
